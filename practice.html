@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Study Tips</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/timestyle.css">
+    
+	<script src="js/index.js"></script>
+	<script>
+			function initialize()
+			{
+
+				leftMenu = document.getElementById("left");
+				leftTo = document.getElementById("toLeft");
+			}
+			
+			function meneLeft()
+			{
+				if(leftTo.style.left === "-250px")
+				{
+					leftTo.style.left = "0px";
+				}
+				else
+				{
+					leftTo.style.left = "-250px";
+				}
+			}
+	</script>
+  </head>
+
+  <body onload = "initialize()" style="background: #5cd6ff;">
+
+  
+		<div class = "menu">
+			<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "img/navlines.png" />
+			<div class = "title">
+				Study Tips
+			</div>
+		</div>
+	<center>
+			<p class = "subtitle">Practice</p>
+	</center>
+				<ol>
+					<br>
+					<li> Study vocabulary every day. Add images and color to the words that you don’t know.</li>
+					<li>Make a list of words that have multiple meanings. They are tricky.</li>
+					<li>Read news articles and add flashcards  for words you don’t know. (Coming soon to Phonyc Frenzy)</li>
+					<li>Know the format and timing of the test. See College Board’s website.</li>
+					<li>Take at least one practice test before you take the real one. Review your practice test to see what you need to work on.</li>
+					<li>Even if you are good at math, learn all the math terms in English.</li>
+				</ol>
+	<div class="buttons" style = "margin-top: 130px;;">
+		<a href="skip.html" class="btn" id="arrow-left" style="float:left;"><img src="img/arrow-thin-left.png" width="75px" height:"75px"></a>
+		<a href="destress.html" class="btn" id="arrow-right" style="float:right;"><img src="img/arrow-thin-right.png" width="75px" height:"75px"></a>
+	</div> 				
+		<nav id = "toLeft" class = "side">
+			<div class = "menu">
+				<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "img/navlines.png" />
+				<div class = "title">
+					Study Tips
+				</div>
+			</div>
+			<div>
+				<img class = "logoImg" id = "left" onclick = "meneLeft()" style="margin-left: 25px;" src = "img/logo(1).gif" />
+			</div>
+			<div id = "links">
+				<a href = "index.html"><img src= "img/User-50.png">   Profile</a>
+				<a href = "flash.html"><img src= "img/Bank Cards-50.png">   Flashcard</a>
+				<a href = "game.html"><img src= "img/Controller-50.png">   Phonyc Balloon</a>
+				<a href = "TipsLand.html"><img src= "img/Idea-50.png">   Study Tips</a>
+				<a href = "ContactUs.html"><img src= "img/Online Support-50.png">   Contact Us</a>
+			</div>
+		</nav>
+	
+</body>
+</html>

@@ -1,0 +1,149 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+
+body {
+  font-size: 54px;
+  font-family: "Lato","Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  margin: 12px 12px;
+  background-image: url(grass.jpg);
+}
+
+#buttons {
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
+a.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  text-shadow: 1px 1px 3px #471f47;
+  font-family: "Lato";
+  color: #fff;
+  font-size: 42px;
+  padding: 10px 20px 10px 20px;
+  /*border: solid #1f628d 8px;*/
+  text-decoration: none;
+  text-align: center;
+}
+
+a.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#buttons a {
+    display: inline-block;
+}
+
+#buttons {
+  text-align: center;
+  margin: 10px auto 10px auto;
+}
+
+body
+{
+	margin: 0px;
+}
+
+.menuImg
+{
+	width:50px;
+	height:30px;
+	float: left;
+	padding: 5px 5px 10px 15px;
+}
+
+.title
+{
+	color: white;
+	font-size: 25px;
+	padding: 7px 0px 7px 80px;
+	text-align: left;
+}
+
+.menu
+{
+	background-color: #699CFC;
+	margin: 0%;
+}
+
+.side
+{
+	background-color: #9FC5F8;
+	position: fixed;
+	width: 250px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+h3
+{
+	margin: 0;
+	font-weight: 300;
+}
+
+a
+{
+	display: block;
+	color: #fff;
+	font-weight: 300;
+	/*border-bottom: 1px solid #258ecd;*/
+	padding: 1em;
+	text-decoration: none;
+	margin-top: 5%;
+	font-size: 17px;
+	text-align: left;
+}
+
+a:hover
+{
+	background: #258ecd;
+}
+
+a:active
+{
+	background: #afdefa;
+}
+
+#toLeft
+{
+	left: -250px;
+
+}
+
+div.logoimg{
+  width: 50px;
+  height: 30px;
+}
+
+#links{
+  background: #fff;
+}
+
+#links a{
+  color: black;
+  padding: 0px;
+}
+
+#links img{
+  padding-right: 15px;
+  margin-top: 0px;
+  padding: 5px;
+}
+
+.btn{
+  width: 275px;
+  height: 80px;
+}

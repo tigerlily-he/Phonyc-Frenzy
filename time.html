@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Study Tips</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/timestyle.css">
+    
+	<script src="js/index.js"></script>
+	<script>
+			function initialize()
+			{
+
+				leftMenu = document.getElementById("left");
+				leftTo = document.getElementById("toLeft");
+			}
+			
+			function meneLeft()
+			{
+				if(leftTo.style.left === "-250px")
+				{
+					leftTo.style.left = "0px";
+				}
+				else
+				{
+					leftTo.style.left = "-250px";
+				}
+			}
+	</script>
+  </head>
+
+  <body onload = "initialize()" style="background: #b7ffb7;">
+
+  
+		<div class = "menu">
+			<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "img/navlines.png" />
+			<div class = "title">
+				Study Tips
+			</div>
+		</div>
+
+	<br>
+			<center>
+				<p class = "subtitle">Time Management</p>
+			</center>
+
+				<ol>
+					<br>
+					<li> Leave at least 3 minutes each section to look over your answers. </li>
+					<li> Make a plan for how long you will spend reading passages, answering questions, and reviewing answer. </li>
+					<li> If you stare at a question for over a minute, skip it. </li>
+					<li> Don’t strain yourself. You get breaks after section 2, 4, and 6. </li>
+				</ol>
+	<div class="buttons" style = "margin-top: 380px;">
+		<a href="destress.html" class="btn" id="arrow-left" style="float:left;"><img src="img/arrow-thin-left.png" width="75px" height:"75px"></a>
+		<a href="skip.html" class="btn" id="arrow-right" style="float:right;"><img src="img/arrow-thin-right.png" width="75px" height:"75px"></a>
+	</div> 
+
+		<nav id = "toLeft" class = "side">
+			<div class = "menu">
+				<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "img/navlines.png" />
+				<div class = "title">
+					Study Tips
+				</div>
+			</div>
+			<div>
+				<img class = "logoImg" id = "left" onclick = "meneLeft()" style="  margin-left: 25px;" src= "img/logo(1).gif" />
+			</div>
+			<div id = "links">
+				<a href = "index.html"><img src= "img/User-50.png">   Profile</a>
+				<a href = "flash.html"><img src= "img/Bank Cards-50.png">   Flashcard</a>
+				<a href = "game.html"><img src= "img/Controller-50.png">   Phonyc Balloon</a>
+				<a href = "TipsLand.html"><img src= "img/Idea-50.png">   Study Tips</a>
+				<a href = "ContactUs.html"><img src= "img/Online Support-50.png">   Contact Us</a>
+			</div>
+		</nav>
+	
+</body>
+</html>

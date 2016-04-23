@@ -1,0 +1,120 @@
+body{
+  background: #00a2ea;
+  font-family: Lato;
+margin: 0;
+} 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#idk{
+  color:#00a2ea;
+  text-align:center;
+  font-size: 27px;
+  font-weight: bold;
+  margin-top: 5%;
+ margin-bottom: 5%;
+
+}
+
+#score{
+margin-left: 30%;
+margin-bottom:20%;
+color:#d6ffd6;
+font-size: 50px;
+font-weight: bold;
+background-color: rgba(0,0,0,0.25);
+padding: 2%;
+ white-space: nowrap;
+ overflow: hidden;
+   -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+}
+#backtoGames{
+padding: 5%;
+background-image: url(backtoGames.png);
+background-color: transparent;
+background-repeat:no-repeat;
+border: 0px;
+display: inline-block;
+margin-left: 20%
+}
+
+#reset{
+padding: 5%;
+background-image: url(reset.png);
+background-color: transparent;
+background-repeat:no-repeat;
+border: 0px;
+display: inline-block;
+margin-left: 15%;
+}
+
+#backtoFlashcards{
+padding: 5%;
+background-image: url(backtoFlashcards.png);
+background-color: transparent;
+background-repeat:no-repeat;
+border: 0px;
+display: inline-block;
+margin-left: 15%
+}
+
+#gadha{
+  color: #00a2ea;
+  background: radial-gradient(
+     #66ff66,
+     #7fff7f,
+     #99ff99,
+     #b2ffb2,
+     #ccffcc,
+     #e5ffe5
+  );
+  padding:center;
+}
+
+/*h1{
+  box-shadow: 5px 5px 5px #9999ff;
+    background-color:#6666ff;
+    text-align:center;
+    text-shadow: 5px 5px 5px #9999ff;
+    margin: 0 auto;
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    color: #696940;
+    height: 40px;
+    width: 400px;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border-radius: 100px;
+    position: relative;
+} */
+
+td{
+  background-color:#b7ffb7;
+ height: 120px;
+ width: 120px;
+
+}
+
+td:hover{
+  background-color:#99ff99;
+  box-shadow: 6px 6px 30px #9999ff;
+}
+
+img
+{
+    height: 165px;
+    width: 105px;
+    padding: 1em;
+}
+
+.shown {
+display:block;
+}
+
+.hidden {
+display:none;
+}

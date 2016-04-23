@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Study Tips</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/timestyle.css">
+    
+	<script src="js/index.js"></script>
+	<script>
+			function initialize()
+			{
+
+				leftMenu = document.getElementById("left");
+				leftTo = document.getElementById("toLeft");
+			}
+			
+			function meneLeft()
+			{
+				if(leftTo.style.left === "-250px")
+				{
+					leftTo.style.left = "0px";
+				}
+				else
+				{
+					leftTo.style.left = "-250px";
+				}
+			}
+	</script>
+  </head>
+
+  <body onload = "initialize()" style="background: #ffccff;">
+
+  
+		<div class = "menu">
+			<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "img/navlines.png" />
+			<div class = "title">
+				Study Tips
+			</div>
+		</div>
+	<center>
+			<p class = "subtitle">De-Stress</p>
+	</center>
+				<ol> 
+					<br>
+					<li>Take deep breaths by inhaling for four seconds and exhaling for four seconds.</li>
+					<li>Close your eyes and imagine success. Positive thinking equals positive results.</li>
+					<li>Remember that you are not alone. Think about all the ELL students who are also going through the same experience.</li>
+					<li>Once the test is over, treat yourself.</li>
+					<li>Reflect on your experience on our Facebook page. Or tweet us.
+</li>
+				</ol>
+	<div class="buttons" style = "margin-top: 290px;">
+		<a href="practice.html" class="btn" id="arrow-left" style="float:left;"><img src="img/arrow-thin-left.png" width="75px" height:"75px"></a>
+		<a href="time.html" class="btn" id="arrow-right" style="float:right;"><img src="img/arrow-thin-right.png" width="75px" height:"75px"></a>
+	</div> 
+		<nav id = "toLeft" class = "side">
+			<div class = "menu">
+				<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "img/navlines.png" />
+				<div class = "title">
+					Study Tips
+				</div>
+			</div>
+			<div>
+				<img class = "logoImg" id = "left" onclick = "meneLeft()" style="margin-left: 25px;" src = "img/logo(1).gif" />
+			</div>
+			<div id = "links">
+				<a href = "index.html"><img src= "img/User-50.png">   Profile</a>
+				<a href = "flash.html"><img src= "img/Bank Cards-50.png">   Flashcard</a>
+				<a href = "game.html"><img src= "img/Controller-50.png">   Phonyc Balloon</a>
+				<a href = "TipsLand.html"><img src= "img/Idea-50.png">   Study Tips</a>
+				<a href = "ContactUs.html"><img src= "img/Online Support-50.png">   Contact Us</a>
+			</div>
+		</nav>
+	
+</body>
+</html>

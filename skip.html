@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Study Tips</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/timestyle.css">
+    
+	<script src="js/index.js"></script>
+	<script>
+			function initialize()
+			{
+
+				leftMenu = document.getElementById("left");
+				leftTo = document.getElementById("toLeft");
+			}
+			
+			function meneLeft()
+			{
+				if(leftTo.style.left === "-250px")
+				{
+					leftTo.style.left = "0px";
+				}
+				else
+				{
+					leftTo.style.left = "-250px";
+				}
+			}
+	</script>
+  </head>
+
+  <body onload = "initialize()" style="background: #aaaaff;">
+
+  
+		<div class = "menu">
+			<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "img/navlines.png" />
+			<div class = "title">
+				Study Tips
+			</div>
+		</div>
+	<center>
+			<p class = "subtitle">Skip or Guess</p>
+	</center>
+				<ol>
+					<br>
+					<li> If you don’t know the meaning of any of the words, skip the question. You lose 0.25 point for every question you get wrong.</li>
+					<li> If you can eliminate at least two of the answers, guess.</li>
+					<li> Focus on the questions in the beginning, which are easier.</li>
+					<li> Your first intuition is most often right. </li>
+				</ol>
+		<div class="buttons" style = "margin-top: 400px;">
+			<a href="time.html" class="btn" id="arrow-left" style="float:left;"><img src="img/arrow-thin-left.png" width="75px" height:"75px"></a>
+			<a href="practice.html" class="btn" id="arrow-right" style="float:right;"><img src="img/arrow-thin-right.png" width="75px" height:"75px"></a>
+		</div> 				
+		<nav id = "toLeft" class = "side">
+			<div class = "menu">
+				<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "img/navlines.png" />
+				<div class = "title">
+					Study Tips
+				</div>
+			</div>
+			<div>
+				<img class = "logoImg" id = "left" onclick = "meneLeft()" style="margin-left: 25px;" src = "img/logo(1).gif" />
+			</div>
+			<div id = "links">
+				<a href = "index.html"><img src= "img/User-50.png">   Profile</a>
+				<a href = "flash.html"><img src= "img/Bank Cards-50.png">   Flashcard</a>
+				<a href = "game.html"><img src= "img/Controller-50.png">   Phonyc Balloon</a>
+				<a href = "TipsLand.html"><img src= "img/Idea-50.png">   Study Tips</a>
+				<a href = "ContactUs.html"><img src= "img/Online Support-50.png">   Contact Us</a>
+			</div>
+		</nav>
+	
+</body>
+</html>

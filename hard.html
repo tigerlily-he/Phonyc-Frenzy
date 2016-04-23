@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Flashcard</title>
+	
+    <link rel="stylesheet" href="css/csss.css"> 
+	
+	<script>
+		num = 0;
+		
+		function initialize()
+		{
+			wordss = document.getElementById("words");
+			wordss.style.display = "none";
+			backgroundss = document.getElementById("backgrounds");
+			backgroundss.style.display = "none";
+			wor2 = document.getElementById("wo2");
+			wor3 = document.getElementById("wo3");
+			wor3.style.display = "none";
+			wows = document.getElementById("wow");
+			wows.style.display = "none";
+			en = document.getElementById("eng")
+			button1 = document.getElementById("btn1");
+			button2 = document.getElementById("btn2");
+			colors = document.getElementById("color");
+			colors.style.display = "none";
+			
+			bolds1 = document.getElementById("bold1");
+			bolds2 = document.getElementById("bold2");
+			bolds3 = document.getElementById("bold3");
+			bolds4 = document.getElementById("bold4");
+			bolds5 = document.getElementById("bold5");
+			bolds6 = document.getElementById("bold6");
+			bolds7 = document.getElementById("bold7");
+			bolds8 = document.getElementById("bold8");
+			bolds9 = document.getElementById("bold9");
+			bolds10 = document.getElementById("bold10");
+			
+			fronts = document.getElementById("front");
+			backss = document.getElementById("backs");
+			backss.style.display = "none";
+			
+			on1 = document.getElementById("one1");
+			on2 = document.getElementById("one2");
+			on2.style.display = "none";
+			on3 = document.getElementById("one3");
+			on3.style.display = "none";
+			on4 = document.getElementById("one4");
+			on4.style.display = "none";
+			on5 = document.getElementById("one5");
+			on5.style.display = "none";
+			on6 = document.getElementById("one6");
+			on6.style.display = "none";
+			on7 = document.getElementById("one7");
+			on7.style.display = "none";
+			on8 = document.getElementById("one8");
+			on8.style.display = "none";
+			on9 = document.getElementById("one9");
+			on9.style.display = "none";
+			on10 = document.getElementById("one10");
+			on10.style.display = "none";
+			
+			tw1 = document.getElementById("two1");
+			tw2 = document.getElementById("two2");
+			tw2.style.display = "none";
+			tw3 = document.getElementById("two3")
+			tw3.style.display = "none";
+			tw4 = document.getElementById("two4");
+			tw4.style.display = "none";
+			tw5 = document.getElementById("two5")
+			tw5.style.display = "none";
+			tw6 = document.getElementById("two6");
+			tw6.style.display = "none";
+			tw7 = document.getElementById("two7")
+			tw7.style.display = "none";
+			tw8 = document.getElementById("two8");
+			tw8.style.display = "none";
+			tw9 = document.getElementById("two9")
+			tw9.style.display = "none";
+			tw10 = document.getElementById("two10");
+			tw10.style.display = "none";
+			
+			th1 = document.getElementById("three1");
+			th2 = document.getElementById("three2");
+			th2.style.display = "none";
+			th3 = document.getElementById("three3");
+			th3.style.display = "none";
+			th4 = document.getElementById("three4");
+			th4.style.display = "none";
+			th5 = document.getElementById("three5");
+			th5.style.display = "none";
+			th6 = document.getElementById("three6");
+			th6.style.display = "none";
+			th7 = document.getElementById("three7");
+			th7.style.display = "none";
+			th8 = document.getElementById("three8");
+			th8.style.display = "none";
+			th9 = document.getElementById("three9");
+			th9.style.display = "none";
+			th10 = document.getElementById("three10");
+			th10.style.display = "none";
+			
+			fo1 = document.getElementById("four1");
+			fo2 = document.getElementById("four2");
+			fo2.style.display = "none";
+			fo3 = document.getElementById("four3")
+			fo3.style.display = "none";
+			fo4 = document.getElementById("four4");
+			fo4.style.display = "none";
+			fo5 = document.getElementById("four5")
+			fo5.style.display = "none";
+			fo6 = document.getElementById("four6");
+			fo6.style.display = "none";
+			fo7 = document.getElementById("four7")
+			fo7.style.display = "none";
+			fo8 = document.getElementById("four8");
+			fo8.style.display = "none";
+			fo9 = document.getElementById("four9")
+			fo9.style.display = "none";
+			fo10 = document.getElementById("four10");
+			fo10.style.display = "none";
+		}
+		
+		function show()
+		{
+			if(backss.style.display === "none")
+			{
+				fronts.style.display = "none";
+				backss.style.display = "block";
+			}
+			else
+			{
+				fronts.style.display = "block";
+				backss.style.display = "none";
+			}
+		}
+		
+		function wordColor()
+		{
+			if (wordss.style.display === "none")
+			{
+				wordss.style.display = "block";
+			}
+			else
+			{
+				wordss.style.display = "none";
+			}
+			backgroundss.style.display = "none";
+			wows.style.display = "none";
+		}
+		
+		function backgroundColor()
+		{
+			if (backgroundss.style.display === "none")
+			{
+				backgroundss.style.display = "block";
+			}
+			else
+			{
+				backgroundss.style.display = "none";
+			}
+			wordss.style.display = "none";
+			wows.style.display = "none";
+		}
+		
+		function boldColor()
+		{
+			if (wows.style.display === "none")
+			{
+				wows.style.display = "block";
+			}
+			else
+			{
+				wows.style.display = "none";
+			}
+			backgroundss.style.display = "none";
+			wordss.style.display = "none";
+		}
+		
+		function blue()
+		{
+			wor2.style.color = "#5cd6ff";
+			wor3.style.color = "#5cd6ff";
+		}
+		function purple()
+		{
+			wor2.style.color = "#aaaaff";
+			wor3.style.color = "#aaaaff";
+		}
+		function pink()
+		{
+			wor2.style.color = "#ffccff";
+			wor3.style.color = "#ffccff";
+		}
+		function black()
+		{
+			wor2.style.color = "black";
+			wor3.style.color = "black";
+		}
+		function white()
+		{
+			wor2.style.color = "white";
+			wor3.style.color = "white";
+		}
+		
+		function blue1()
+		{
+			document.body.style.backgroundColor = "#5cd6ff";
+		}
+		
+		function purple1()
+		{
+			document.body.style.backgroundColor = "#aaaaff";
+		}
+		
+		function pink1()
+		{
+			document.body.style.backgroundColor = "#ffccff";
+		}
+		
+		function black1()
+		{
+			document.body.style.backgroundColor = "black";
+		}
+		
+		function white1()
+		{
+			document.body.style.backgroundColor = "white";
+		}
+		
+		function blue2()
+		{
+			bolds1.style.color = "#5cd6ff";
+			bolds2.style.color = "#5cd6ff";
+			bolds3.style.color = "#5cd6ff";
+			bolds4.style.color = "#5cd6ff";
+			bolds5.style.color = "#5cd6ff";
+			bolds6.style.color = "#5cd6ff";
+			bolds7.style.color = "#5cd6ff";
+			bolds8.style.color = "#5cd6ff";
+			bolds9.style.color = "#5cd6ff";
+			bolds10.style.color = "#5cd6ff";
+		}
+		
+		function purple2()
+		{
+			bolds1.style.color = "#aaaaff";
+			bolds2.style.color = "#aaaaff";
+			bolds3.style.color = "#aaaaff";
+			bolds4.style.color = "#aaaaff";
+			bolds5.style.color = "#aaaaff";
+			bolds6.style.color = "#aaaaff";
+			bolds7.style.color = "#aaaaff";
+			bolds8.style.color = "#aaaaff";
+			bolds9.style.color = "#aaaaff";
+			bolds10.style.color = "#aaaaff";
+		}
+		
+		function pink2()
+		{
+			bolds1.style.color = "#ffccff";
+			bolds2.style.color = "#ffccff";
+			bolds3.style.color = "#ffccff";
+			bolds4.style.color = "#ffccff";
+			bolds5.style.color = "#ffccff";
+			bolds6.style.color = "#ffccff";
+			bolds7.style.color = "#ffccff";
+			bolds8.style.color = "#ffccff";
+			bolds9.style.color = "#ffccff";
+			bolds10.style.color = "#ffccff";
+		}
+		
+		function black2()
+		{
+			bolds1.style.color = "black";
+			bolds2.style.color = "black";
+			bolds3.style.color = "black";
+			bolds4.style.color = "black";
+			bolds5.style.color = "black";
+			bolds6.style.color = "black";
+			bolds7.style.color = "black";
+			bolds8.style.color = "black";
+			bolds9.style.color = "black";
+			bolds10.style.color = "black";
+		}
+		
+		function white2()
+		{
+			bolds1.style.color = "white";
+			bolds2.style.color = "white";
+			bolds3.style.color = "white";
+			bolds4.style.color = "white";
+			bolds5.style.color = "white";
+			bolds6.style.color = "white";
+			bolds7.style.color = "white";
+			bolds8.style.color = "white";
+			bolds9.style.color = "white";
+			bolds10.style.color = "white";
+		}
+		
+		function next()
+		{
+			num++;
+			display();
+			wor3.style.display = "none";
+			notShow();
+			en.innerHTML = "Show SAT Word";
+			wor3.style.display = "none";
+			backss.style.display = "none";
+			wor2.style.display = "block";
+			fronts.style.display = "block";
+		}
+		
+		function back()
+		{
+			num--;
+			display();
+			wor3.style.display = "none";
+			notShow();
+			en.innerHTML = "Show SAT Word";
+			wor3.style.display = "none";
+			backss.style.display = "none";
+			wor2.style.display = "block";
+			fronts.style.display = "block";
+		}
+		
+		function display()
+		{
+			word = new Array(on1, on2, on3, on4, on5, on6, on7, on8, on9, on10);
+			word1 = new Array(tw1, tw2, tw3, tw4, tw5, tw6, tw7, tw8, tw9, tw10);
+			word2 = new Array(th1, th2, th3, th4, th5, th6, th7, th8, th9, th10);
+			word3 = new Array(fo1, fo2, fo3, fo4, fo5, fo6, fo7, fo8, fo9, fo10);
+
+			for (i = 0; i < 10; i++)
+			{
+				word[i].style.display = "none";
+				word1[i].style.display = "none";
+				word2[i].style.display = "none";
+				word3[i].style.display = "none";
+				if(i === num)
+				{
+					word[i].style.display = "block";
+					word1[i].style.display = "block";
+					word2[i].style.display = "block";
+					word3[i].style.display = "block";
+				}
+			}
+		}
+		
+		function notShow()
+		{
+			if(num >= 9)
+			{
+				num = 9;
+				on10.style.display = "block";
+				tw10.style.display = "block";
+				th10.style.display = "block";
+				fo10.style.display = "block";
+			}
+			if(num <= 0)
+			{
+				num = 0;
+				on1.style.display = "block";
+				tw1.style.display = "block";
+				th1.style.display = "block";
+				fo1.style.display = "block";
+			}
+		}
+		
+		function engl()
+		{
+			if (wor3.style.display === "none")
+			{
+				wor3.style.display = "block"
+				en.innerHTML = "Hide SAT Word";
+			}
+			else
+			{
+				wor3.style.display = "none";
+				en.innerHTML = "Show SAT Word";
+			}
+		}
+		
+		function set()
+		{
+			if(colors.style.display === "none")
+			{
+				colors.style.display = "block";
+			}
+			else
+			{
+				colors.style.display = "none";
+			}
+		}
+	</script>
+  </head>
+
+	<body onload = "initialize()">
+	
+	<div>
+		<button onclick = "back()" id = "btn2" style ="float:left"><img src="img/arrow-thin-left.png" width="50px" height="25px"></button>
+		<button onclick = "next()" id = "btn1" style = "float:right"><img src="img/arrow-thin-right.png" width="50px" height="25px"></button>
+	</div>
+	
+	<br/>
+   
+	<div class="card-container">
+		<div class="card" onclick = "show()">
+			<div id = "backs" class="side back">
+				<p id = "wo" class="sentence">
+					<span id = "four1">(adj.) – fleeting</span>
+					<span id = "four2">(adj.) – very good</span>
+					<span id = "four3">(adj.) – extremely demanding</span>
+					<span id = "four4">(adj.) – hard to please</span>
+					<span id = "four5">(adj.) – well chosen</span>
+					<span id = "four6">(adj.) – cheating</span>
+					<span id = "four7">(adj.) – sociable</span>
+					<span id = "four8">(n.) – individual trait</span>
+					<span id = "four9">(adj.) – small</span>
+					<span id = "four10">(adj.) – done without will</span>
+				</p>
+				<p id = "wo1" class="sentence">
+					<span id = "one1">The <b id = "bold1">evanescent</b> mirage could only be seen at a certain angle.</span>
+					<span id = "one2">Robert was an <b id = "bold2">exceptional</b> soccer player.</span>
+					<span id = "one3">The pain was <b id = "bold3">excruciating</b>, but she was determined to go home.</span>
+					<span id = "one4">Denton was <b id = "bold4">fastidious</b> about his appearance.</span>
+					<span id = "one5">His arguments were <b id = "bold5">felicitous</b>, and his choice of language was admirable.</span>
+					<span id = "one6">Copying someone’s homework is considered <b id = "bold6">fraudulent</b>.</span>
+					<span id = "one7">Dolphins are <b id = "bold7">gregarious</b> animals.</span>
+					<span id = "one8">Juan’s little <b id = "bold8">idiosyncrasy</b> was his bow tie.</span>
+					<span id = "one9">The benefits of eating shark cartilage is <b id = "bold9">infinitesimal</b> compared to the risks.</span>
+					<span id = "one10">The student’s departure was <b id = "bold10">involuntarily</b>.<span>
+				</p>
+			</div>
+			
+			<div id = "front" class="side">
+				<p id = "wo2" align="center">
+					<span id = "three1">fugaz</span>
+					<span id = "three2">extraordinario(a)</span>
+					<span id = "three3">exigente</span>
+					<span id = "three4">meticuloso</span>
+					<span id = "three5">acertado(a)</span>
+					<span id = "three6">fraudulento(a)</span>
+					<span id = "three7">gregario</span>
+					<span id = "three8">idiosincrasia</span>
+					<span id = "three9">pequeno</span>
+					<span id = "three10">involuntario</span>
+				</p>
+				<p id = "wo3" class="sentence">
+					<span id = "two1">Evanescent</span>
+					<span id = "two2">Exceptional</span>
+					<span id = "two3">Excruciating</span>
+					<span id = "two4">Fastidious</span>
+					<span id = "two5">Felicitous</span>
+					<span id = "two6">Fraudulent</span>
+					<span id = "two7">Gregarious</span>
+					<span id = "two8">Idiosyncrasy</span>
+					<span id = "two9">Infinitesimal</span>
+					<span id = "two10">Involuntary</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div>
+		<img id = "sets" onclick = "set()" src = "img/Settings.png"/>
+	</div>
+	<br/><br/>
+		<div id = "color">
+		<div id = "colors">
+			<div id = "table1">
+				<div class = "add"><button id = "word" class = "verticals" onclick = "wordColor()">Change Word Colors</button></div>
+				<div class = "add"><button class = "verticals"  onclick = "boldColor()">Change English Word Color</button></div>
+				<div class = "add"><button id = "background" class = "verticals"  onclick = "backgroundColor()">Change Background Color</button></div>
+			</div>
+			
+			<div id = "table2">
+				<div id = "words">
+					<div class = "add"><button class = "vertical" id = "blue" onclick = "blue()">Blue</button></div>
+					<div class = "add"><button class = "vertical" id = "purple" onclick = "purple()">Purple</button></div>
+					<div class = "add"><button class = "vertical" id = "pink" onclick = "pink()">Pink</button></div>
+					<div class = "add"><button class = "vertical" id = "black" onclick = "black()">Black</button></div>
+					<div class = "add"><button class = "vertical" id = "white" onclick = "white()">White</button></div>
+				</div>
+				<div  id = "wow">
+					<div class = "add"><button class = "vertical" id = "blue2" onclick = "blue2()">Blue</button></div>
+					<div class = "add"><button class = "vertical" id = "purple2" onclick = "purple2()">Purple</button></div>
+					<div class = "add"><button class = "vertical" id = "pink2" onclick = "pink2()">Pink</button></div>
+					<div class = "add"><button class = "vertical" id = "black2" onclick = "black2()">Black</button></div>
+					<div class = "add"><button class = "vertical" id = "white2" onclick = "white2()">White</button></div>
+				</div>
+				<div id = "backgrounds">
+					<div class = "add"><button class = "vertical" id = "blue1" onclick = "blue1()">Blue</button></div>
+					<div class = "add"><button class = "vertical" id = "purple1" onclick = "purple1()">Purple</button></div>
+					<div class = "add"><button class = "vertical" id = "pink1" onclick = "pink1()">Pink</button></div>
+					<div class = "add"><button class = "vertical" id = "black1" onclick = "black1()">Black</button></div>
+					<div class = "add"><button class = "vertical" id = "white1" onclick = "white1()">White</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	
+	
+	<div style="margin-left:30%; margin-top: 10px; margin-bottom: 10px; ">	
+		<button id = "eng" onclick = "engl()">Show SAT Word</button>
+	</div>
+	
+	<div id= "buttons">
+		<a href="flash.html" class="btn" id="main"><img src = "img/Bank Cards-50.png" /></a> 
+	</div>
+        
+		<!--<script src="js/index.js"></script>-->
+
+    
+  </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trial</title>
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script src="js/index.js"></script>
+	<script>
+			function initialize()
+			{
+
+				leftMenu = document.getElementById("left");
+				leftTo = document.getElementById("toLeft");
+			}
+			
+			function meneLeft()
+			{
+				if(leftTo.style.left === "-250px")
+				{
+					leftTo.style.left = "0px";
+				}
+				else
+				{
+					leftTo.style.left = "-250px";
+				}
+			}
+	</script>
+	
+	<style>
+	*{
+	font-family: Lato;
+	}
+	body{
+	background-color: #fafafa;
+	}
+	
+	div{
+	padding: 5px;
+	margin: 5px;
+	}
+	
+	#yourMessage1{
+	height: 100px;
+	}
+	form{
+background-color: #D3EFDB;
+}
+	
+	h2, h3, label{
+	color: #23af4c;
+	}
+	
+	label{
+	font-size: 1.2em;
+	}
+	
+	button{
+	margin: 10px;
+	}
+	
+	.socialMediaIcons{
+	display: inline-block;
+	margin: 0px 3px;
+	}
+	
+	.iconCitation{
+	display: inline-block;
+	font-size: 0.7em;
+	}
+	
+/* CSS for Menu Starts Here */
+	body
+{
+	margin: 0px;
+}
+
+.menuImg
+{
+	width:70px;
+	height:44px;
+	float: left;
+	padding: 5px 5px 10px 15px;
+}
+
+.title
+{
+	color: white;
+	font-size: 25px;
+	padding: 7px 0px 7px 80px;
+	text-align: left;
+	margin: -8px;
+}
+
+.menu
+{
+	background-color: #699CFC;
+	margin: 0%;
+}
+
+.side
+{
+	background-color: #9FC5F8;
+	position: fixed;
+	width: 250px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+h3
+{
+	margin: 0;
+	font-weight: 300;
+}
+
+a
+{
+	display: block;
+	color: #000;
+	font-weight: 300;
+	padding: 1em;
+	text-decoration: none;
+	margin-top: 5%;
+	font-size: 17px;
+	text-align: left;
+}
+
+a:hover
+{
+	background: #258ecd;
+}
+
+a:active
+{
+	background: #afdefa;
+}
+
+#toLeft
+{
+	left: -250px;
+}
+
+div.logoimg{
+  width: 50px;
+  height: 30px;
+}
+
+#links{
+  background: #fff;
+}
+
+#links a{
+  color: black;
+  padding: 0px;
+}
+
+#links img{
+  padding-right: 15px;
+  margin-top: 0px;
+  padding: 5px;
+}
+	</style>
+</head>
+
+
+
+<body onload = "initialize()">
+		<div class = "menu">
+			<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "navlines.png" />
+			<div class = "title">
+				Contact Us
+			</div>
+		</div>
+		
+		
+		<!---Contact Form Code Begins Here-->
+		<form action="MAILTO:phonycsfrenzy@gmail.com" method="post" enctype="text/plain">
+  <div class="form-group">
+  <h3> Did you spot an error? Let us know and we'll resolve the issue.</h3> <br>
+		<label for="inputName1">Your Name</label>
+		<input type="text" class="form-control" id="inputName1" placeholder="Your Name" required>
+</div>
+
+<div class="form-group">
+<label for="subject"> Subject</label>
+<input type="text" class="form-control" id="subject"  placeholder="Message Subject">
+<p class="help-block">Ex. Translation error, bug</p>
+</div>
+
+	
+	<div class="form-group">
+	<label for="yourMessage1">Your Message</label>
+	<input type="text" class="form-control" id="yourMessage1" placeholder="What can we fix?" size="50" required>
+	</div>
+
+
+
+  <button type="submit" class="btn btn-default" size="50">Submit</button>
+  <br /><br/>
+</form>
+	
+	<div class="Share">
+		<h3 class="Share"> Do you have suggestions for Pho<i>nyc</i> Frenzy? Sharing is caring. </h3>
+		<div>
+				<a href="https://www.facebook.com/pages/Phonyc-Frenzy/1016732168338036"  class="socialMediaIcons"> <img src="Facebook-32.png" alt="Facebook" /> </a>
+				<a  href="https://twitter.com/phonyc_frenzy"  class="socialMediaIcons"><img src="Twitter-32.png" alt="Twitter"/></a>
+				<a href="https://instagram.com/phonyc_frenzy/" class="socialMediaIcons"> <img src="Instagram-32.png" alt="Instagram" /> </a>
+				<a href="MAILTO: phonycsfrenzy@gmail" class="socialMediaIcons"><img src="Message-32.png" alt="Email"></a>
+		</div >
+		
+			<div class="iconCitation">Icon made by 
+				<a href="http://www.freepik.com" title="Freepik"class="iconCitation">Freepik</a> 
+				from <a href="http://www.flaticon.com" title="Flaticon"class="iconCitation">www.flaticon.com</a>
+			is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" class="iconCitation">CC BY 3.0</a>
+			</div>
+		
+	</div>
+	
+		<nav id = "toLeft" class = "side">
+			<div class = "menu">
+				<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "img/navlines.png" />
+				<div class = "title">
+					Contact Us
+				</div>
+			</div>
+			<div>
+				<img class = "logoImg" id = "left" onclick = "meneLeft()" src = "img/logo(1).gif" style="margin-left: 25px;" />
+			</div>
+			<div id = "links">
+				<a href = "index.html"><img src= "img/User-50.png">   Profile</a>
+				<a href = "flash.html"><img src= "img/Bank Cards-50.png">   Flashcard</a>
+				<a href = "game.html"><img src= "img/Controller-50.png">   Phonyc Balloons</a>
+				<a href = "TipsLand.html"><img src= "img/Idea-50.png">   Study Tips</a>
+				<a href = "ContactUs.html"><img src= "img/Online Support-50.png">   <b>Contact Us</b></a>
+			</div>
+		</nav>
+</body>
+</html>

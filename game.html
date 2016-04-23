@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Game Landing Page</title>
+
+    <link rel="stylesheet" href="css/gamestyle.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	<script src="js/index.js"></script>
+	<script>
+			function initialize()
+			{
+
+				leftMenu = document.getElementById("left");
+				leftTo = document.getElementById("toLeft");
+			}
+			
+			function meneLeft()
+			{
+				if(leftTo.style.left === "-250px")
+				{
+					leftTo.style.left = "0px";
+				}
+				else
+				{
+					leftTo.style.left = "-250px";
+				}
+			}
+	</script>
+  </head>
+
+  <body onload = "initialize()" style="background-image: url(img/balloons.jpg)">
+
+  
+
+		<div class = "menu">
+			<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "img/navlines.png" />
+			<div class = "title">
+				Phonyc Balloons
+			</div>
+		</div>
+		<CENTER>	
+		<p style="line-height: 45px; color: #fff;"><b>Phonyc Balloons</b></p>
+		<div id= "buttons">
+		<a href="games.html" class="btn"><img src="img/emoticon-easy.png" width="75px" height:"75px">      Easy</a></br/>
+		<a href="games.html" class="btn"><img src="img/emoticon-medium.png" width="75px" height:"75px">Medium</a> <br/>
+		<a href="games.html" class="btn"><img src="img/emoticon-hard.png" width="75px" height:"75px">      Hard</a> <br/>
+		</div>
+    
+		<nav id = "toLeft" class = "side">
+			<div class = "menu">
+				<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "img/navlines.png" />
+				<div class = "title">
+					Phonyc Balloon
+				</div>
+			</div>
+			<div>
+				<img class = "logoImg" id = "left" onclick = "meneLeft()" src = "img/logo(1).gif" />
+			</div>
+
+			<div id = "links">
+				<a href = "index.html"><img src= "img/User-50.png">   Profile</a>
+				<a href = "flash.html"><img src= "img/Bank Cards-50.png">   Flashcard</a>
+				<a href = "game.html"><img src= "img/Controller-50.png">   <b>Phonyc Balloons</b></a>
+				<a href = "TipsLand.html"><img src= "img/Idea-50.png">   Study Tips</a>
+				<a href = "ContactUs.html"><img src= "img/Online Support-50.png">   Contact Us</a>
+			</div>
+		</nav>
+	
+</body>
+</html>

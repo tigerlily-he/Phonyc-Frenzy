@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!-- Yu Ting Yang -->
+<html>
+	<head>
+		<title>
+			Profile
+		</title>
+		<link type = "text/css" rel="stylesheet" href="css.css" />
+	    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		
+		<script>
+			
+			function initialize()
+			{
+				change = document.getElementById("changeImg");
+				change.style.display = "none";
+				mainImg = document.getElementById("profileImg");
+				leftMenu = document.getElementById("left");
+				leftTo = document.getElementById("toLeft");
+			}
+			
+			function imgChange()
+			{
+				if (change.style.display == "none")
+				{
+					change.style.display = "block";
+				}
+				else
+				{
+					change.style.display = "none";
+				}
+			}
+			
+			function profileImg1()
+			{
+				mainImg.src = "profile1.png"
+			}
+			
+			function profileImg2()
+			{
+				mainImg.src = "profile2.png"
+			}
+			
+			function profileImg3()
+			{
+				mainImg.src = "profile3.png"
+			}
+			
+			function profileImg4()
+			{
+				mainImg.src = "profile4.png"
+			}
+
+			function meneLeft()
+			{
+				if(leftTo.style.left === "-250px")
+				{
+					leftTo.style.left = "0px";
+				}
+				else
+				{
+					leftTo.style.left = "-250px";
+				}
+			}
+		</script>
+	</head>
+	
+	<body onload = "initialize()">
+		<div id = "first">
+			<div class = "menu">
+				<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "img/navlines.png" />
+				<div class = "title">
+					Profile
+				</div>
+			</div>
+			<div class = "profile">
+				<img id = "profileImg" onclick = "imgChange()" src = "profile1.png" />
+				<div class = "name">
+					<div>
+						Nusrat
+					</div>
+					<div>
+						Dream School: MIT
+					</div>
+				</div>
+			<br/>
+			<br/>
+			<br/>
+				<div class = "prog">
+					Progress
+				
+					<img class = "progress" src = "img/progress.png" />
+				</div>
+				<div class="score">
+					Recent PSAT Score: 1700
+					<br/>
+					Previous PSAT Score: 1200
+				</div>
+			</div>
+			
+			<div id = "changeImg">
+				<img class = "img1" onclick = "profileImg1()" src = "profile1.png" />
+				<img class = "img2" onclick = "profileImg2()" src = "profile2.png" />
+				<img class = "img3" onclick = "profileImg3()" src = "profile3.png" />
+				<img class = "img4" onclick = "profileImg4()" src = "profile4.png" />
+			</div>
+			
+			<br/>
+			<div class="badges">
+				<div class = "bad">
+					Your Honor Badges
+				</div>
+				<br/>
+				<img class = "badge" src = "badge1.png" />
+				<img class = "badge1" src = "badge1.png" />
+				<img class = "badge2" src = "badge.png" />
+				<img class = "badge3" src = "badge.png" />
+			<br/>
+				<img class = "badge4" src = "badge.png" />
+				<img class = "badge5" src = "badge.png" />
+				<img class = "badge6" src = "badge.png" />
+				<img class = "badge7" src = "badge.png" />
+			</div>
+			<div class="wordofday">
+				<a href="easy.html">
+					Today's <u>Word of the Day</u> is:
+					<br/> 
+					<b>Evade</b>
+				</a>
+			</div>
+
+			<br/>
+				<div class = "flashcards">
+					<a class = "hello" href="game.html"><p style="color:black;">How's your vocabulary?
+					<br/>
+					<b>Play Now</b></a>
+				</div>
+
+		
+		<nav id = "toLeft" class = "side">
+			<div class = "menu">
+				<img class = "menuImg" id = "left" onclick = "meneLeft()" src = "img/navlines.png" />
+				<div class = "title">
+					Profile
+				</div>
+			</div>
+			<div>
+				<img class = "logoImg" id = "left" onclick = "meneLeft()" src = "img/logo(1).gif" style="margin-left: 25px;" />
+			</div>
+			<div id = "links">
+				<a href = "index.html"><img src= "img/User-50.png">   <b>Profile</b></a>
+				<a href = "flash.html"><img src= "img/Bank Cards-50.png">   Flashcard</a>
+				<a href = "game.html"><img src= "img/Controller-50.png">   Phonyc Balloons</a>
+				<a href = "TipsLand.html"><img src= "img/Idea-50.png">   Study Tips</a>
+				<a href = "ContactUs.html"><img src= "img/Online Support-50.png">   Contact Us</a>
+			</div>
+		</nav>
+	</body>
+</html>
